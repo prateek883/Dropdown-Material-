@@ -147,6 +147,94 @@ export default function DrpdownPlain() {
               Austrailia
             </div>
           </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            <div className={styles.iconFlags}>
+              <img
+                src={
+                  'https://www.bing.com/th?id=OSB.Lu_WbKA28qgS5LCyk1v3ZQ--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
+                }
+                alt="countryflags"
+              />{' '}
+              Afganistan
+            </div>
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            <div>
+              <img
+                src={
+                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
+                }
+                alt="countryflags"
+              />{' '}
+              West Indies
+            </div>
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            <div>
+              <img
+                src={
+                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
+                }
+                alt="countryflags"
+              />{' '}
+              West Indeis
+            </div>
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            <div>
+              <img
+                src={
+                  'https://www.bing.com/th?id=OSB.FnnSsq_2DD4SKYyjyJFTKA--.png&w=20&h=20&rs=1&qlt=80&o=6&pid=cricket'
+                }
+                alt="countryflags"
+              />{' '}
+              Austrailia
+            </div>
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            <div className={styles.iconFlags}>
+              <img
+                src={
+                  'https://www.bing.com/th?id=OSB.Lu_WbKA28qgS5LCyk1v3ZQ--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
+                }
+                alt="countryflags"
+              />{' '}
+              Afganistan
+            </div>
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            <div>
+              <img
+                src={
+                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
+                }
+                alt="countryflags"
+              />{' '}
+              West Indies
+            </div>
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            <div>
+              <img
+                src={
+                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
+                }
+                alt="countryflags"
+              />{' '}
+              West Indeis
+            </div>
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            <div>
+              <img
+                src={
+                  'https://www.bing.com/th?id=OSB.FnnSsq_2DD4SKYyjyJFTKA--.png&w=20&h=20&rs=1&qlt=80&o=6&pid=cricket'
+                }
+                alt="countryflags"
+              />{' '}
+              Austrailia
+            </div>
+          </MenuItem>
         </OverlayScrollbarsComponent>
       </StyledMenu>
     </div>
