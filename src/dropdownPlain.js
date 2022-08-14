@@ -5,7 +5,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-import styles from './style.css';
+import styles from './style.module.css';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -23,7 +23,6 @@ const StyledMenu = styled((props) => (
 ))(({ theme }) => ({
   '& .MuiPaper-root': {
     borderRadius: 6,
-    minWidth: 210,
     backgroundColor: '#fff',
     border: '1px solid #cdcdcd',
     color:
@@ -63,15 +62,11 @@ export default function DrpdownPlain() {
     <div>
       <Button
         id="demo-customized-button"
-        aria-controls={open ? 'demo-customized-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
         variant="outlined"
-        disableElevation
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         sx={{
-          width: '216px',
+          width: '166px',
           fontSize: 14,
           textTransform: 'none',
           padding: '0px ',

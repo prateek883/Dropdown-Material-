@@ -8,7 +8,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 
-import styles from './style.css';
+import styles from './style.module.css';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -75,7 +75,7 @@ export default function DrpdownPlain() {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         sx={{
-          width: '25%',
+          width: '187px',
           fontSize: 14,
           textTransform: 'none',
           padding: '0px ',
@@ -84,24 +84,24 @@ export default function DrpdownPlain() {
       >
         Sort By : Featured
       </Button>
-      <OverlayScrollbarsComponent
-        style={{
-          width: '100%',
-          maxWidth: 360,
-          position: 'relative',
-          overflow: 'auto',
-          maxHeight: 300,
+      <StyledMenu
+        id="demo-customized-menu"
+        MenuListProps={{
+          'aria-labelledby': 'demo-customized-button',
         }}
-        options={{ scrollbars: { autoHide: 'scroll' } }}
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
       >
-        <StyledMenu
-          id="demo-customized-menu"
-          MenuListProps={{
-            'aria-labelledby': 'demo-customized-button',
+        <OverlayScrollbarsComponent
+          style={{
+            width: '100%',
+            maxWidth: 360,
+            position: 'relative',
+            overflow: 'auto',
+            maxHeight: 300,
           }}
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
+          options={{ scrollbars: { autoHide: 'scroll' } }}
         >
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
             <div>
@@ -147,8 +147,8 @@ export default function DrpdownPlain() {
             </div>
             Austrailia
           </MenuItem>
-        </StyledMenu>
-      </OverlayScrollbarsComponent>
+        </OverlayScrollbarsComponent>
+      </StyledMenu>
     </div>
   );
 }

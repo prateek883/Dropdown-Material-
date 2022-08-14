@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import styles from './style.css';
+import styles from './style.module.css';
 
 import DropdownPlain from './dropdownPlain.js';
 import DropdownFlags from './dropdownFlags.js';
@@ -9,15 +9,15 @@ import DropdownIcons from './dropdownIcons.js';
 export default function App() {
   return (
     <div className={styles.ContentContainer}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container>
         <Grid item xs={12} md={6}>
           <DropdownPlain />
         </Grid>
         <Grid item xs={12} md={6}>
-          <DropdownFlags />
+          {/* <DropdownFlags /> */}
         </Grid>
         <Grid item xs={12} md={6}>
-          <DropdownIcons />
+          {/* <DropdownIcons /> */}
         </Grid>
         <Grid item xs={12} md={6}></Grid>
       </Grid>
