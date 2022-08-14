@@ -27,7 +27,7 @@ const StyledMenu = styled((props) => (
 ))(({ theme }) => ({
   '& .MuiPaper-root': {
     borderRadius: 6,
-    minWidth: 210,
+    minWidth: 190,
     backgroundColor: '#fff',
     border: '1px solid #cdcdcd',
     color:
@@ -82,7 +82,7 @@ export default function DrpdownPlain() {
           height: '10%',
         }}
       >
-        Sort By : Featured
+        Sort by : country
       </Button>
       <StyledMenu
         id="demo-customized-menu"
@@ -104,15 +104,15 @@ export default function DrpdownPlain() {
           options={{ scrollbars: { autoHide: 'scroll' } }}
         >
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
+            <div className={styles.iconFlags}>
               <img
                 src={
                   'https://www.bing.com/th?id=OSB.Lu_WbKA28qgS5LCyk1v3ZQ--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
                 }
                 alt="countryflags"
-              />
+              />{' '}
+              Afganistan
             </div>
-            Afganistan
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
             <div>
@@ -121,9 +121,9 @@ export default function DrpdownPlain() {
                   'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
                 }
                 alt="countryflags"
-              />
+              />{' '}
+              West Indies
             </div>
-            West Indies
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
             <div>
@@ -132,9 +132,9 @@ export default function DrpdownPlain() {
                   'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
                 }
                 alt="countryflags"
-              />
+              />{' '}
+              West Indeis
             </div>
-            West Indeis
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
             <div>
@@ -143,9 +143,9 @@ export default function DrpdownPlain() {
                   'https://www.bing.com/th?id=OSB.FnnSsq_2DD4SKYyjyJFTKA--.png&w=20&h=20&rs=1&qlt=80&o=6&pid=cricket'
                 }
                 alt="countryflags"
-              />
+              />{' '}
+              Austrailia
             </div>
-            Austrailia
           </MenuItem>
         </OverlayScrollbarsComponent>
       </StyledMenu>

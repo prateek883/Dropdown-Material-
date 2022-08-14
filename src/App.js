@@ -14,10 +14,10 @@ export default function App() {
           <DropdownPlain />
         </Grid>
         <Grid item xs={12} md={6}>
-          {/* <DropdownFlags /> */}
+          <DropdownFlags />
         </Grid>
         <Grid item xs={12} md={6}>
-          {/* <DropdownIcons /> */}
+          <DropdownIcons />
         </Grid>
         <Grid item xs={12} md={6}></Grid>
       </Grid>
