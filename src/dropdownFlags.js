@@ -2,6 +2,7 @@ import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
+import Stack from '@mui/material/Stack';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
@@ -99,7 +100,7 @@ export default function DrpdownPlain() {
             maxWidth: 360,
             position: 'relative',
             overflow: 'auto',
-            maxHeight: 300,
+            maxHeight: 150,
           }}
           options={{ scrollbars: { autoHide: 'scroll' } }}
         >
