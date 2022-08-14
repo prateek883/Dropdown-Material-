@@ -1,0 +1,15 @@
+.dropdownTitle {
+  font-size: '12px';
+}
+
+.menuSubTitle {
+  color: #0f1111;
+  text-decoration: none;
+  padding: 2px 12px 1px 13px;
+  display: block;
+  white-space: nowrap;
+  outline: 0;
+  border: 1px solid transparent;
+  margin-left: 1px;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}
