@@ -5,6 +5,7 @@ import styles from './style.module.css';
 import DropdownPlain from './dropdownPlain.js';
 import DropdownFlags from './dropdownFlags.js';
 import DropdownIcons from './dropdownIcons.js';
+import DropdownPotarit from './dropdownPotarit.js';
 
 export default function App() {
   return (
@@ -16,10 +17,12 @@ export default function App() {
         <Grid item xs={12} md={6}>
           <DropdownFlags />
         </Grid>
-        <Grid item xs={12} md={6} sx={{ marginTop: '8em' }}>
+        <Grid item xs={12} md={6} sx={{ marginTop: '10em' }}>
           <DropdownIcons />
         </Grid>
-        <Grid item xs={12} md={6}></Grid>
+        <Grid item xs={12} md={6} sx={{ marginTop: '10em' }}>
+          <DropdownPotarit />
+        </Grid>
       </Grid>
     </div>
   );

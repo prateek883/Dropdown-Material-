@@ -93,10 +93,22 @@ export default function DrpdownPlain() {
             maxWidth: 310,
             position: 'relative',
             overflow: 'auto',
-            maxHeight: 100,
+            maxHeight: 150,
           }}
           options={{ scrollbars: { autoHide: 'scroll' } }}
         >
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            Featured
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            Price: High to Low
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            Price: Low to High
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            Customer Reviews
+          </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
             Featured
           </MenuItem>
