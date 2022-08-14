@@ -3,6 +3,10 @@ import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import EditIcon from '@mui/icons-material/Edit';
+import ArchiveIcon from '@mui/icons-material/Archive';
+import FileCopyIcon from '@mui/icons-material/FileCopy';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import styles from './style.css';
@@ -89,15 +93,19 @@ export default function DrpdownPlain() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+          <EditIcon />
           Featured
         </MenuItem>
         <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+          <FileCopyIcon />
           Price: High to Low
         </MenuItem>
         <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+          <ArchiveIcon />
           Price: Low to High
         </MenuItem>
         <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+          <MoreHorizIcon />
           Customer Reviews
         </MenuItem>
       </StyledMenu>
