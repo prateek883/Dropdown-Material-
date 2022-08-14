@@ -17,12 +17,11 @@
     outline: 0;
     border: 1px solid transparent !important;
     font-family: 'Amazon Ember', Arial, sans-serif !important;
-    font-size: '11px';
+    font-size: '14px';
   }
 
   .iconFlags {
-    height: '20px';
-    width: '20px';
+    margin-left: 1px;
   }
 }
 

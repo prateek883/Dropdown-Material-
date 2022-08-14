@@ -1,0 +1,38 @@
+/* Desktop View */
+
+@media screen and (min-width: 992px) {
+  .ContentContainer {
+    padding: 2% 6% 2% 6% !important;
+  }
+
+  .menuSubTitle {
+    color: #0f1111 !important;
+    padding: 2px 12px 1px 12px !important;
+    outline: 0;
+    border: 1px solid transparent !important;
+    font-family: 'Amazon Ember', Arial, sans-serif !important;
+    font-size: '11px' !important;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .menuSubTitle {
+    color: #0f1111 !important;
+    padding: 2px 12px 1px 12px !important;
+    border: 1px solid transparent !important;
+    font-family: 'Amazon Ember', Arial, sans-serif !important;
+    font-size: '11px';
+  }
+}
+
+/* Tablet View */
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .menuSubTitle {
+    color: #0f1111 !important;
+    padding: 2px 12px 1px 12px !important;
+    border: 1px solid transparent !important;
+    font-family: 'Amazon Ember', Arial, sans-serif !important;
+    font-size: '11px' !important;
+  }
+}

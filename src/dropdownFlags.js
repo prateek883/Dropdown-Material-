@@ -2,7 +2,7 @@ import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
-import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
@@ -27,7 +27,7 @@ const StyledMenu = styled((props) => (
   />
 ))(({ theme }) => ({
   '& .MuiPaper-root': {
-    borderRadius: 6,
+    borderRadius: 4,
     minWidth: 190,
     backgroundColor: '#fff',
     border: '1px solid #cdcdcd',
@@ -37,7 +37,7 @@ const StyledMenu = styled((props) => (
         : theme.palette.grey[300],
     boxShadow: '0 2px 4px rgb(0 0 0 / 13%);',
     '& .MuiMenu-list': {
-      padding: '0px 0px',
+      padding: '3px 4px 3px 2px',
     },
     '& .MuiMenuItem-root': {
       '& .MuiSvgIcon-root': {
@@ -100,141 +100,73 @@ export default function DrpdownPlain() {
             maxWidth: 360,
             position: 'relative',
             overflow: 'auto',
-            maxHeight: 150,
+            maxHeight: 128,
           }}
           options={{ scrollbars: { autoHide: 'scroll' } }}
         >
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div className={styles.iconFlags}>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.Lu_WbKA28qgS5LCyk1v3ZQ--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              Afganistan
-            </div>
+          <MenuItem onClick={handleClose}>
+            <img
+              height="16px"
+              width="20px"
+              src={
+                'https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg'
+              }
+              alt="countryflags"
+            />
+            <Typography className={styles.menuSubTitle}>India</Typography>
           </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              West Indies
-            </div>
+          <MenuItem onClick={handleClose}>
+            <img
+              height="16px"
+              width="20px"
+              src={
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.svg.png?20120912082242'
+              }
+              alt="countryflags"
+            />
+            <Typography className={styles.menuSubTitle}>Argentina</Typography>
           </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              West Indeis
-            </div>
+          <MenuItem onClick={handleClose}>
+            <img
+              height="16px"
+              width="20px"
+              src={
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/640px-Flag_of_Portugal.svg.png'
+              }
+              alt="countryflags"
+            />
+            <Typography className={styles.menuSubTitle}>Portugal</Typography>
           </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.FnnSsq_2DD4SKYyjyJFTKA--.png&w=20&h=20&rs=1&qlt=80&o=6&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              Austrailia
-            </div>
+          <MenuItem onClick={handleClose}>
+            <img
+              height="16px"
+              width="20px"
+              src={
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI7pUaGSLXJ4XjRmIdo_XXF9vVSihKbOyFFhbVKNO1e4cN51OTs78OoeItQwUGRd_1O00&usqp=CAU'
+              }
+              alt="countryflags"
+            />
+            <Typography className={styles.menuSubTitle}>Sri Lanka</Typography>
           </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div className={styles.iconFlags}>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.Lu_WbKA28qgS5LCyk1v3ZQ--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              Afganistan
-            </div>
+          <MenuItem onClick={handleClose}>
+            <img
+              height="16px"
+              width="20px"
+              src={'https://www.worldatlas.com/img/flag/ca-flag.jpg'}
+              alt="countryflags"
+            />
+            <Typography className={styles.menuSubTitle}>Canada</Typography>
           </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              West Indies
-            </div>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              West Indeis
-            </div>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.FnnSsq_2DD4SKYyjyJFTKA--.png&w=20&h=20&rs=1&qlt=80&o=6&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              Austrailia
-            </div>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div className={styles.iconFlags}>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.Lu_WbKA28qgS5LCyk1v3ZQ--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              Afganistan
-            </div>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              West Indies
-            </div>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.mX1qiDIAIKXWkesxIvfKPw--.png&w=20&h=20&rs=1&qlt=80&o=6&dpr=1.3&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              West Indeis
-            </div>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <div>
-              <img
-                src={
-                  'https://www.bing.com/th?id=OSB.FnnSsq_2DD4SKYyjyJFTKA--.png&w=20&h=20&rs=1&qlt=80&o=6&pid=cricket'
-                }
-                alt="countryflags"
-              />{' '}
-              Austrailia
-            </div>
+          <MenuItem onClick={handleClose}>
+            <img
+              height="16px"
+              width="20px"
+              src={
+                'https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/800px-Flag_of_Russia.svg.png'
+              }
+              alt="countryflags"
+            />
+            <Typography className={styles.menuSubTitle}>Russia</Typography>
           </MenuItem>
         </OverlayScrollbarsComponent>
       </StyledMenu>

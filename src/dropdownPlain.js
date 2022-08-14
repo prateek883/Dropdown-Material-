@@ -7,6 +7,9 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import styles from './style.module.css';
 
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
+import 'overlayscrollbars/css/OverlayScrollbars.css';
+
 const StyledMenu = styled((props) => (
   <Menu
     elevation={2}
@@ -22,14 +25,14 @@ const StyledMenu = styled((props) => (
   />
 ))(({ theme }) => ({
   '& .MuiPaper-root': {
-    borderRadius: 6,
+    borderRadius: 4,
     width: 188,
     backgroundColor: '#fff',
     border: '1px solid #cdcdcd',
     color:
       theme.palette.mode === 'light'
         ? 'rgb(55, 65, 81)'
-        : theme.palette.grey[300],
+        : theme.palette.grey[30],
     boxShadow: '0 2px 4px rgb(0 0 0 / 13%);',
     '& .MuiMenu-list': {
       padding: '3px 4px',
@@ -84,18 +87,29 @@ export default function DrpdownPlain() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-          Featured
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-          Price: High to Low
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-          Price: Low to High
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-          Customer Reviews
-        </MenuItem>
+        <OverlayScrollbarsComponent
+          style={{
+            width: '100%',
+            maxWidth: 310,
+            position: 'relative',
+            overflow: 'auto',
+            maxHeight: 100,
+          }}
+          options={{ scrollbars: { autoHide: 'scroll' } }}
+        >
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            Featured
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            Price: High to Low
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            Price: Low to High
+          </MenuItem>
+          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
+            Customer Reviews
+          </MenuItem>
+        </OverlayScrollbarsComponent>
       </StyledMenu>
     </div>
   );

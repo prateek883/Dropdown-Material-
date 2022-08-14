@@ -8,7 +8,11 @@ import ArchiveIcon from '@mui/icons-material/Archive';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import styles from './style.module.css';
+import Typography from '@mui/material/Typography';
+import styles from './icons.module.css';
+
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
+import 'overlayscrollbars/css/OverlayScrollbars.css';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -25,8 +29,8 @@ const StyledMenu = styled((props) => (
   />
 ))(({ theme }) => ({
   '& .MuiPaper-root': {
-    borderRadius: 6,
-    minWidth: 210,
+    borderRadius: 4,
+    minWidth: 150,
     backgroundColor: '#fff',
     border: '1px solid #cdcdcd',
     color:
@@ -35,7 +39,7 @@ const StyledMenu = styled((props) => (
         : theme.palette.grey[300],
     boxShadow: '0 2px 4px rgb(0 0 0 / 13%);',
     '& .MuiMenu-list': {
-      padding: '0px 0px',
+      padding: '3px 4px',
     },
     '& .MuiMenuItem-root': {
       '& .MuiSvgIcon-root': {
@@ -74,7 +78,7 @@ export default function DrpdownPlain() {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         sx={{
-          width: '216px',
+          width: '166px',
           fontSize: 14,
           textTransform: 'none',
           padding: '0px ',
@@ -91,22 +95,39 @@ export default function DrpdownPlain() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-          <EditIcon />
-          Featured
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-          <FileCopyIcon />
-          Price: High to Low
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-          <ArchiveIcon />
-          Price: Low to High
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-          <MoreHorizIcon />
-          Customer Reviews
-        </MenuItem>
+        <OverlayScrollbarsComponent
+          style={{
+            width: '100%',
+            maxWidth: 310,
+            position: 'relative',
+            overflow: 'auto',
+            maxHeight: 110,
+          }}
+          options={{ scrollbars: { autoHide: 'scroll' } }}
+        >
+          <MenuItem onClick={handleClose}>
+            <EditIcon />
+            <Typography className={styles.menuSubTitle}>Featured</Typography>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <FileCopyIcon />
+            <Typography className={styles.menuSubTitle}>
+              Price: Low to High
+            </Typography>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <ArchiveIcon />
+            <Typography className={styles.menuSubTitle}>
+              Price: High to Low
+            </Typography>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <MoreHorizIcon />
+            <Typography className={styles.menuSubTitle}>
+              Customer Reviews
+            </Typography>
+          </MenuItem>
+        </OverlayScrollbarsComponent>
       </StyledMenu>
     </div>
   );
