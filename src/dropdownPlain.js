@@ -22,6 +22,7 @@ const StyledMenu = styled((props) => (
       vertical: '0',
       horizontal: '0',
     }}
+    sx={{ padding: '0px' }}
     {...props}
   />
 ))(({ theme }) => ({
@@ -74,7 +75,7 @@ export default function DrpdownPlain() {
         disableElevation
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
-        sx={{ width: '216px', fontSize: 14 }}
+        sx={{ width: '216px', fontSize: 14, textTransform: 'none' }}
       >
         Sort By : Featured
       </Button>
