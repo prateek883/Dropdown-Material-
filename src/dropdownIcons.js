@@ -106,41 +106,43 @@ export default function DrpdownPlain() {
         >
           <MenuItem onClick={handleClose}>
             <EditIcon />
-            <Typography className={styles.menuSubTitle}>Featured</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              Featured
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <FileCopyIcon />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Price: Low to High
             </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <ArchiveIcon />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Price: High to Low
             </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <MoreHorizIcon />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Customer Reviews
             </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <FileCopyIcon />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Price: Low to High
             </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <ArchiveIcon />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Price: High to Low
             </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <MoreHorizIcon />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Customer Reviews
             </Typography>
           </MenuItem>

@@ -76,7 +76,7 @@ export default function DrpdownFlags() {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         sx={{
-          width: '187px',
+          width: '167px',
           fontSize: 14,
           textTransform: 'none',
           padding: '0px ',
@@ -113,7 +113,9 @@ export default function DrpdownFlags() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>India</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              India
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <img
@@ -124,7 +126,9 @@ export default function DrpdownFlags() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>Argentina</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              Argentina
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <img
@@ -135,7 +139,9 @@ export default function DrpdownFlags() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>Portugal</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              Portugal
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <img
@@ -146,7 +152,9 @@ export default function DrpdownFlags() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>Sri Lanka</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              Sri Lanka
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <img
@@ -166,7 +174,9 @@ export default function DrpdownFlags() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>Russia</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              Russia
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <img
@@ -188,7 +198,9 @@ export default function DrpdownFlags() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>Sri Lanka</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              Sri Lanka
+            </Typography>
           </MenuItem>
         </OverlayScrollbarsComponent>
       </StyledMenu>

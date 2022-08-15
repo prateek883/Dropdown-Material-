@@ -3,6 +3,7 @@ import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Typography from '@mui/material/Typography';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import styles from './style.module.css';
@@ -98,28 +99,50 @@ export default function DrpdownPlain() {
           options={{ scrollbars: { autoHide: 'scroll' } }}
         >
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            Featured
+            <Typography variant="body2" gutterBottom>
+              Featured
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            Price: High to Low
+            <Typography variant="body2" gutterBottom>
+              {' '}
+              Price: High to Low
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            Price: Low to High
+            <Typography variant="body2" gutterBottom>
+              {' '}
+              Price: Low to High
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            Customer Reviews
+            <Typography variant="body2" gutterBottom>
+              {' '}
+              Reviews
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            Featured
+            <Typography variant="body2" gutterBottom>
+              Featured
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            Price: High to Low
+            <Typography variant="body2" gutterBottom>
+              {' '}
+              Price: High to Low
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            Price: Low to High
+            <Typography variant="body2" gutterBottom>
+              {' '}
+              Price: Low to High
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            Customer Reviews
+            <Typography variant="body2" gutterBottom>
+              {' '}
+              Reviews
+            </Typography>
           </MenuItem>
         </OverlayScrollbarsComponent>
       </StyledMenu>

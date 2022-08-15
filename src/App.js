@@ -14,7 +14,7 @@ export default function App() {
         <Grid item xs={12} md={6}>
           <DropdownPlain />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} className={styles.dropdownFlagsContainer}>
           <DropdownFlags />
         </Grid>
         <Grid item xs={12} md={6} sx={{ marginTop: '10em' }}>

@@ -112,7 +112,7 @@ export default function DrpdownPotrait() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Sachin Tendulkar
             </Typography>
           </MenuItem>
@@ -124,7 +124,7 @@ export default function DrpdownPotrait() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Rahul Dravid
             </Typography>
           </MenuItem>
@@ -136,7 +136,7 @@ export default function DrpdownPotrait() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Yuvraj Singh
             </Typography>
           </MenuItem>
@@ -148,7 +148,7 @@ export default function DrpdownPotrait() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Rohit Sharma
             </Typography>
           </MenuItem>
@@ -160,7 +160,9 @@ export default function DrpdownPotrait() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>Virat Kohli</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              Virat Kohli
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <img
@@ -170,7 +172,7 @@ export default function DrpdownPotrait() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Ishant Sharma
             </Typography>
           </MenuItem>
@@ -182,7 +184,9 @@ export default function DrpdownPotrait() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>MS Dhoni</Typography>
+            <Typography variant="body2" className={styles.menuSubTitle}>
+              MS Dhoni
+            </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <img
@@ -194,7 +198,7 @@ export default function DrpdownPotrait() {
               }
               alt="countryflags"
             />
-            <Typography className={styles.menuSubTitle}>
+            <Typography variant="body2" className={styles.menuSubTitle}>
               Jasprit Bumrah
             </Typography>
           </MenuItem>

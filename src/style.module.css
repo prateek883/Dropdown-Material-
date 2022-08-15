@@ -27,6 +27,9 @@
 
 /* Mobile View */
 @media screen and (max-width: 480px) {
+  .ContentContainer {
+    padding: 2% 6% 2% 6% !important;
+  }
   .dropdownTitle {
     font-size: '12px';
   }
@@ -41,6 +44,10 @@
     border: 1px solid transparent !important;
     font-family: 'Amazon Ember', Arial, sans-serif !important;
     font-size: '14px';
+  }
+
+  .dropdownFlagsContainer {
+    margin-top: 5em !important;
   }
 }
 
@@ -63,5 +70,8 @@
     border: 1px solid transparent !important;
     font-family: 'Amazon Ember', Arial, sans-serif !important;
     font-size: '13px' !important;
+  }
+  .dropdownFlagsContainer {
+    margin-top: 5em !important;
   }
 }

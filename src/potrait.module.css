@@ -29,6 +29,11 @@
     font-family: 'Amazon Ember', Arial, sans-serif !important;
     font-size: '11px';
   }
+  .playersImage {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
 }
 
 /* Tablet View */
@@ -38,5 +43,10 @@
     border: 1px solid transparent !important;
     font-family: 'Amazon Ember', Arial, sans-serif !important;
     font-size: '11px' !important;
+  }
+  .playersImage {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
   }
 }
