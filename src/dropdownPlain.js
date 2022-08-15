@@ -53,6 +53,17 @@ const StyledMenu = styled((props) => (
   },
 }));
 
+const options = [
+  { id: 1, title: 'Featured' },
+  { id: 2, title: 'Price: Low to High' },
+  { id: 3, title: 'Price: High to Low' },
+  { id: 4, title: 'Customer Reviews' },
+  { id: 5, title: 'Featured Title' },
+  { id: 6, title: 'Price: Low to High' },
+  { id: 7, title: 'Price: High to Low' },
+  { id: 8, title: 'Customer Reviews' },
+];
+
 export default function DrpdownPlain() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -62,6 +73,16 @@ export default function DrpdownPlain() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  // const [selectedIndex, setSelectedIndex] = React.useState(1);
+  // const handleClickListItem = (event) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
+
+  // const handleMenuItemClick = (event, index) => {
+  //   setSelectedIndex(index);
+  //   setAnchorEl(null);
+  // };
 
   return (
     <div>
