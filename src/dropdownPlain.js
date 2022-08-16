@@ -77,10 +77,6 @@ export default function DrpdownPlain() {
     setAnchorEl(null);
   };
 
-  const handleClickListItem = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
     setAnchorEl(null);
