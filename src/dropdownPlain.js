@@ -66,23 +66,25 @@ const options = [
 
 export default function DrpdownPlain() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [selectedIndex, setSelectedIndex] = React.useState(1);
   const open = Boolean(anchorEl);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
 
-  // const [selectedIndex, setSelectedIndex] = React.useState(1);
-  // const handleClickListItem = (event) => {
-  //   setAnchorEl(event.currentTarget);
-  // };
+  const handleClickListItem = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
-  // const handleMenuItemClick = (event, index) => {
-  //   setSelectedIndex(index);
-  //   setAnchorEl(null);
-  // };
+  const handleMenuItemClick = (event, index) => {
+    setSelectedIndex(index);
+    setAnchorEl(null);
+  };
 
   return (
     <div>
@@ -108,6 +110,7 @@ export default function DrpdownPlain() {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+        secondary={options[selectedIndex]}
       >
         <OverlayScrollbarsComponent
           style={{
@@ -119,52 +122,18 @@ export default function DrpdownPlain() {
           }}
           options={{ scrollbars: { autoHide: 'scroll' } }}
         >
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <Typography variant="body2" gutterBottom>
-              Featured
-            </Typography>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <Typography variant="body2" gutterBottom>
-              {' '}
-              Price: High to Low
-            </Typography>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <Typography variant="body2" gutterBottom>
-              {' '}
-              Price: Low to High
-            </Typography>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <Typography variant="body2" gutterBottom>
-              {' '}
-              Reviews
-            </Typography>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <Typography variant="body2" gutterBottom>
-              Featured
-            </Typography>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <Typography variant="body2" gutterBottom>
-              {' '}
-              Price: High to Low
-            </Typography>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <Typography variant="body2" gutterBottom>
-              {' '}
-              Price: Low to High
-            </Typography>
-          </MenuItem>
-          <MenuItem onClick={handleClose} className={styles.menuSubTitle}>
-            <Typography variant="body2" gutterBottom>
-              {' '}
-              Reviews
-            </Typography>
-          </MenuItem>
+          {options.map((option, index) => (
+            <MenuItem
+              key={option}
+              selected={index === selectedIndex}
+              onClick={(event) => handleMenuItemClick(event, index)}
+              className={styles.menuSubTitle}
+            >
+              <Typography variant="body2" gutterBottom>
+                {option.title}
+              </Typography>
+            </MenuItem>
+          ))}
         </OverlayScrollbarsComponent>
       </StyledMenu>
     </div>
