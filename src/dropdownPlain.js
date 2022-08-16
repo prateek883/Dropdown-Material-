@@ -54,14 +54,11 @@ const StyledMenu = styled((props) => (
 }));
 
 const options = [
-  { id: 1, title: 'Featured' },
-  { id: 2, title: 'Price: Low to High' },
-  { id: 3, title: 'Price: High to Low' },
-  { id: 4, title: 'Customer Reviews' },
-  { id: 5, title: 'Featured Title' },
-  { id: 6, title: 'Price: Low to High' },
-  { id: 7, title: 'Price: High to Low' },
-  { id: 8, title: 'Customer Reviews' },
+  'Sort By:Featured',
+  'Sort By:High to Low',
+  'Sort By:Low to High',
+  'Sort By:Customer Reviews',
+  'Sort By:Feedback',
 ];
 
 export default function DrpdownPlain() {
@@ -90,13 +87,13 @@ export default function DrpdownPlain() {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         sx={{
-          width: '166px',
+          width: '170px',
           fontSize: 14,
           textTransform: 'none',
           padding: '0px ',
         }}
       >
-        Sort By : Featured
+        {options[selectedIndex]}
       </Button>
       <StyledMenu
         id="demo-customized-menu"
@@ -106,7 +103,6 @@ export default function DrpdownPlain() {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        secondary={options[selectedIndex]}
       >
         <OverlayScrollbarsComponent
           style={{
@@ -126,7 +122,7 @@ export default function DrpdownPlain() {
               className={styles.menuSubTitle}
             >
               <Typography variant="body2" gutterBottom>
-                {option.title}
+                {option}
               </Typography>
             </MenuItem>
           ))}
